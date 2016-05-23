@@ -34,6 +34,7 @@ end
 remote_file node[:certbot][:bin] do
   owner  node[:certbot][:user]
   group  node[:certbot][:group]
+  mode   node[:certbot][:mode]
   source node[:certbot][:download_uri]
 end
 

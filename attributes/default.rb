@@ -1,6 +1,7 @@
 default[:certbot] = {
   :user         => "root",
   :group        => "root",
+  :mode         => 0755,
   :bin          => "/usr/local/sbin/certbot-auto",
   :python_bin   => "/usr/bin/python27",
   :download_uri => "https://dl.eff.org/certbot-auto"
